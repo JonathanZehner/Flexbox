@@ -1,0 +1,57 @@
+/*-- Reset Rule --*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*--********************* Universal Styling ************************--*/
+
+/*--------------------------------------------------------------------*
+
+  Font Families:
+
+    DaFont Fonts *---/
+
+        Docallisme on Street (by Ryal Docallismehas, email:
+              docallisme@gmail.com)
+
+
+        Beatstreet (by Punkto Design, http://charaktertypen.com)
+
+    Google Fonts *---/
+
+        Quattrocento (by Impallari Type)
+
+*--------------------------------------------------------------------*/
+/*------------------- Begin Font-Face ----------------*/
+
+@font-face {
+  font-family: 'beatstreet';
+  src: url('../fonts/beatstreet.ttf');
+}
+
+@font-face {
+  font-family: 'docstreet';
+  src: url('../fonts/docallismeonstreet.otf');
+}
+
+@font-face {
+  font-family: 'quattro';
+  src: url(../fonts/QuattrocentoSans-Regular.ttf);
+}
+/*------------------ End Font-Face -----------------*/
+
+body {
+  font-family: 'quattro', arial, serif;
+  margin: auto;
+  padding: 1%;
+}
+
+h1 {
+  font: normal 5rem/1.5 'docstreet', 'beatstreet', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font: bold 2rem/1.5 'beatstreet', arial, sans-serif;
+}
