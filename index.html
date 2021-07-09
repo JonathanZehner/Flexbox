@@ -14,6 +14,8 @@
 		<!-- CSS -->
 		<link type="text/css" rel="stylesheet" href="style.css" />
 
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- Google Font -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,9 +36,9 @@
 
 	<body class="site">
 
-		<header>
+		<header id="top">
 
-			<img src="images/bboy-logo.png" alt="Beastie Boys Logo from Sabotage" title="The Beastie Boys">
+			<img class="logo" src="images/bboy-logo.png" alt="Beastie Boys Logo from Sabotage" title="The Beastie Boys">
 
 			<!-- Hamburger Menu buttons -->
 			<button class="hamburger">&#9776;</button>
@@ -45,27 +47,39 @@
 			<!-- Hamburger Menu -->
 			<nav class="menu">
 			  <ul>
-			    <a href="#"><li>LINK ONE</li></a>
-			    <a href="#"><li>LINK TWO</li></a>
-			    <a href="#"><li>LINK THREE</li></a>
-			    <a href="#"><li>LINK FOUR</li></a>
-			    <a href="#"><li>LINK FIVE</li></a>
+			    <a href="#overview"><li>About</li></a>
+			    <a href="#about"><li>Ad Rock</li></a>
+			    <a href="#mca"><li>MC A</li></a>
+			    <a href="#mike-d"><li>Mike D</li></a>
+			    <a href="#albums"><li>Albums</li></a>
 			  </ul>
 			</nav>
 
 			<!-- Desktop Menu -->
 			<nav class="desktop-menu">
 				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
+					<div class="dropdown-nav">
+						<button class="drop-btn" type="button" name="button">About</button>
+						<div class="dropdown-content-nav">
+							<a href="#about">Ad Rock</a>
+							<a href="#mca">MCA</a>
+							<a href="#mike-d">Mike D</a>
+						</div>
+					</div>
+					<li><a href="#albums">Albums</a></li>
+					<li><a href="#vid">Music Video</a></li>
 				</ul>
 
 				<ul>
-					<li><a href="#">Social 1</a></li>
-					<li><a href="#">Social 1</a></li>
-					<li><a href="#">Social 1</a></li>
+					<li><a href="https://www.facebook.com/beastieboys" target="_blank">Facebook</a></li>
+					<li><a href="https://www.instagram.com/beastieboysstory/" target="_blank">Instagram</a></li>
+					<li><a href="https://twitter.com/beastieboys" target="_blank">Twitter</a></li>
 				</ul>
+
+				<form class="search" action="index.html">
+					<input type="search" name="search" placeholder="Enter keyword..."/>
+					<input type="submit" value="search" />
+				</form>
 			</nav>
 
 			<div class="hero">
@@ -75,7 +89,7 @@
 		</header>
 
 		<main class="site-content">
-			<article class="overview">
+			<article class="overview" id="overview">
 				<h2>Now here's a little story I've got to tell about three bad brothers you know so well...</h2>
 				<p>...a trio of goofy teenagers were able to run wild through a city in seedy decline. Coming of age just as punk rock and hip-hop blossomed in the city, the Beasties fell in love with the musical chaos and heady energy that was swirling all around them. They were able to tap into that energy and draw inspiration from it for the remainder of their careers, as their fond recollections of the time and place make clear. They don’t sugar-coat it, though, and every story of hanging out on the third floor of Danceteria is tempered by one about hordes of rats swarming from their apartment trash cans.</p>
 			</article>
@@ -84,9 +98,9 @@
 				<img src="images/beastie-puma.jpeg" alt="image of the Beastie Boys wearing red and black tracksuits and their D.J. holding a boombox next to a building in New York City" title="Solid Gold Hits!">
 			</section>
 
-			<article class="ad-rock">
+			<article class="ad-rock" id="about">
 				<figure>
-					<img src="images/bboys-adrock.jpg" alt="image of the Beastie Boys outside of a pizza restaurant with Ad-Rock in the foreground" title="Adam Harovitz">
+					<img class="med" src="images/bboys-adrock.jpg" alt="image of the Beastie Boys outside of a pizza restaurant with Ad-Rock in the foreground" title="Adam Harovitz">
 					<figcaption>Photo pulled from Popwell.net</figcaption>
 				</figure>
 				<h2>Adam "King Ad-Rock" Horowitz</h2>
@@ -97,9 +111,9 @@
 				</p>
 			</article>
 
-			<article class="mc-a">
+			<article class="mca" id="mca">
 				<figure>
-					<img src="images/bboys-palmtree.jpg" alt="image of the Beastie Boys outside with Adam Yauch in the foreground. The sky is blue and a green palm borders the right of the image" title="Adam Yauch">
+					<img class="med" src="images/bboys-palmtree.jpg" alt="image of the Beastie Boys outside with Adam Yauch in the foreground. The sky is blue and a green palm borders the right of the image" title="Adam Yauch">
 					<figcaption>Photo pulled from NorthernExpress.com</figcaption>
 				</figure>
 				<h2>Adam "MC A" Yauch</h2>
@@ -110,9 +124,9 @@
 				</p>
 			</article>
 
-			<article class="mike-d">
+			<article class="mike-d" id="mike-d">
 				<figure>
-					<img src="images/bboys-mike-d2.jpg" alt="image of the Beastie Boys against a blue background" title="Michael Diamond">
+					<img class="med" src="images/bboys-mike-d2.jpg" alt="image of the Beastie Boys against a blue background" title="Michael Diamond">
 					<figcaption>Photo pulled from HappyMag.tv</figcaption>
 				</figure>
 				<h2>Mike "D" Diamond</h2>
@@ -125,9 +139,9 @@
 
 			<aside class="sidebar">
 				<ul>
-					<li><a href="#"><img src="images/bboy-adrock.png" alt="Silouette of Adam Horowitz" title="Adam Horowitz"/></a></li>
-					<li><a href="#"><img src="images/bboy-mike.png" alt="Silouette of Mike Diamond" title="Mike Diamond"/></a></li>
-					<li><a href="#"><img src="images/bboy-yauch.png" alt="Silouette of Adam Yauch" title="Adam Yauch"/></a></li>
+					<li><a href="#about"><img src="images/bboy-adrock.png" alt="Silouette of Adam Horowitz" title="Adam Horowitz"/></a></li>
+					<li><a href="#mike-d"><img src="images/bboy-mike.png" alt="Silouette of Mike Diamond" title="Mike Diamond"/></a></li>
+					<li><a href="#mca"><img src="images/bboy-yauch.png" alt="Silouette of Adam Yauch" title="Adam Yauch"/></a></li>
 				</ul>
 			</aside>
 
@@ -135,32 +149,42 @@
 				<img src="images/bboys-story.jpeg" alt="image of the Beastie Boys...two are sitting on a skateboard as MC A jumps over. Image is taken from a lower perspective and looking up at the Beastie Boys" title="If its going to be that kind of party...">
 			</section>
 
-			<section>
+			<section class="albums" id="albums">
 				<h2>Albums</h2>
-				<img src="images/license-ill-cover.jpeg" alt="License to Ill album cover front" title="License to Ill">
-				<img src="images/pauls-boutique-cover.jpeg" alt="Paul's Boutique album cover front" title="Paul's Boutique">
-				<img src="images/check-head-cover.jpeg" alt="Check Your Head album cover front" title="Check Your Head">
-				<img src="images/ill-communication-cover.jpeg" alt="Ill Communications album cover front" title="Ill Communications">
-				<img src="images/hellonasty-cover.jpeg" alt="Hello Nasty album cover front" title="Hello Nasty">
-				<img src="images/boroughs-cover.png" alt="To The 5 Boroughs album cover front" title="To The 5 Boroughs">
+				<img class="sm" src="images/license-ill-cover.jpeg" alt="License to Ill album cover front" title="License to Ill">
+				<img class="sm" src="images/pauls-boutique-cover.jpeg" alt="Paul's Boutique album cover front" title="Paul's Boutique">
+				<img class="sm" src="images/check-head-cover.jpeg" alt="Check Your Head album cover front" title="Check Your Head">
+				<img class="sm" src="images/ill-communication-cover.jpeg" alt="Ill Communications album cover front" title="Ill Communications">
+				<img class="sm" src="images/hellonasty-cover.jpeg" alt="Hello Nasty album cover front" title="Hello Nasty">
+				<img class="sm" src="images/boroughs-cover.png" alt="To The 5 Boroughs album cover front" title="To The 5 Boroughs">
 			</section>
 
-			<div class="video">
+			<div class="video" id="vid">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/qORYO0atB6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 
 			<section>
-				<a href="#"><img src="images/boombox.png" alt="image of 1980s style boombox" title="Take me to the TOP!!"</a>
+				<a href="#top"><img class="boombox" src="images/boombox.png" alt="image of 1980s style boombox" title="Take me to the TOP!!"/></a>
 				<h4>Top</h4>
 			</section>
 
 		</main>
 
 		<footer>
+
+      <div class="social-media">
+        <a href="https://www.instagram.com/beastieboysstory/" target="_blank"><i class="fa fa-instagram" style="font-size:40px;color:#fbad50"></i></a>
+
+        <a href="https://www.facebook.com/beastieboys" target="_blank"><i class="fa fa-facebook-square" style="font-size:40px;color:#4267B2"></i></a>
+      </div>
+
 			<p>&copy; Copyright 2021</p>
-			<p>Designed by Nomad Web Designs</p>
+			<p>Designed by <a href="mailto:jonathan.zehner28@gmail.com">Nomad Web Designs</a></p>
 
 		</footer>
+    <script src="lightbox/src/js/lightbox.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/hamburger.js"></script>
 
 	</body>
 
