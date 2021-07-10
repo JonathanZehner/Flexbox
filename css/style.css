@@ -298,6 +298,16 @@ blockquote p {
 .back {
 	transform: rotateY(180deg);
 }
-/*--******** Flip Card Albums Styling (end)********--/
+/*--******** Flip Card Albums Styling (end)********--*/
+
+.video {
+  max-height: 315px;
+  max-width: 560px;
+  width: 100%;
+}
+
+.boombox a, .boombox h4 {
+  font: normal 2rem/1 'docstreet', 'beatstreet', sans-serif;
+}
 
 /*-------------------- End Main Content Styling -----------------------*/
