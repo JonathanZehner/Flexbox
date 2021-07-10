@@ -43,9 +43,9 @@
 /*------------------ End Font-Face -----------------*/
 
 body {
-  font-family: 'quattro', arial, serif;
+  font: normal 1rem/1.5 'quattro', arial, serif;
   margin: auto;
-  padding: 1%;
+  padding-top: 5px;
 }
 
 h1 {
@@ -64,8 +64,9 @@ h2, h3, h4, h5, h6 {
 }
 
 .med {
+  border: 5px solid #6b110c;
   max-width: 500px;
-  width: 100%;
+  width: 96%;
 }
 
 .sm {
@@ -102,7 +103,6 @@ a:hover {
 /*--****************** Main Content Styling *************************--*/
 
 /*-------------------- Begin Header Styling ---------------------------*/
-
 /*-- Hamburger Menu (begin) --*/
 .hamburger{
   background:none;
@@ -181,9 +181,39 @@ a:hover {
   display: none;
 }
 
-
+.hero {
+  background-image: url(../images/brickwall.png);
+}
 /*-------------------- End Header Styling -----------------------------*/
-
+/*-------------------- Begin Main Content Styling ---------------------*/
 .section-break {
   display: none;
 }
+
+.site-content {
+  margin: auto;
+  padding: 2%;
+}
+
+.overview, article {
+  padding: 10px 0 20px 0;
+}
+
+.site-content article h2 {
+  padding-bottom: 13px;
+}
+
+figcaption {
+  display: none;
+}
+
+blockquote p {
+  font: italic 0.8rem/1.5 'beatstreet', 'quattro', sans-serif;
+  letter-spacing: 0.05rem;
+  padding-top: 10px;
+}
+
+.sidebar {
+  display: none;
+}
+/*-------------------- End Main Content Styling -----------------------*/
