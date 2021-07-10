@@ -13,15 +13,13 @@
 
     DaFont Fonts *---/
 
-        Docallisme on Street (by Ryal Docallismehas, email:
+        * Docallisme on Street (by Ryal Docallismehas, email:
               docallisme@gmail.com)
-
-
-        Beatstreet (by Punkto Design, http://charaktertypen.com)
+        * Beatstreet (by Punkto Design, http://charaktertypen.com)
 
     Google Fonts *---/
 
-        Quattrocento (by Impallari Type)
+        * Quattrocento (by Impallari Type)
 
 *--------------------------------------------------------------------*/
 /*------------------- Begin Font-Face ----------------*/
@@ -79,10 +77,12 @@ blockquote p {
 
 /*-- Images --*/
 .logo {
-  margin: 0 auto;
+  background-color: white;
+  left: 0;
+  padding: 0 100% 6px 2%;
+  position: absolute;
   width: 100px;
 }
-
 .med {
   border: 5px solid #6b110c;
   max-width: 500px;
@@ -102,6 +102,18 @@ blockquote p {
 .hero img, .section-break img {
   max-width: 800px;
   width: 100%;
+}
+
+.hero img {
+  padding-top: 75px;
+}
+
+.hero {
+  background-image: url(../images/brickwall.png);
+}
+
+.nav-bar {
+  background-color: white !important;
 }
 
 a {
@@ -200,10 +212,6 @@ a:hover {
 .desktop-nav {
   display: none;
 }
-
-.hero {
-  background-image: url(../images/brickwall.png);
-}
 /*-------------------- End Header Styling -----------------------------*/
 /*-------------------- Begin Main Content Styling ---------------------*/
 .section-break {
@@ -242,7 +250,11 @@ blockquote p {
   margin: 10px auto;
   padding-bottom: 15px;
 }
-/*-- Flip Card Albums Styling --*/
+
+/*--******** Flip Card Albums Styling ********--/
+    by David Walsh
+    https://davidwalsh.name/css-flip
+
 /* entire container, keeps perspective */
 .flip-container {
   margin: auto;
@@ -286,4 +298,6 @@ blockquote p {
 .back {
 	transform: rotateY(180deg);
 }
+/*--******** Flip Card Albums Styling (end)********--/
+
 /*-------------------- End Main Content Styling -----------------------*/
