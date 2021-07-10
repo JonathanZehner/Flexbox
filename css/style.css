@@ -183,15 +183,15 @@ a:hover {
 }
 
 .menu li {
-  /* border-bottom:#1E2223e3 1px solid; */
-  display: block;
+  /* border-bottom:#1E2223e3 1px solid; */ /*-- commented out to preserve --*/
+  display: block;                          /*-- syntax for future use --*/
   padding:15px 0 15px 0;
 }
 
 .menu li:hover {
   background:#1e222395;
-  /* border-bottom:#B7C2C4 1px solid; */
-  display: block;
+  /* border-bottom:#B7C2C4 1px solid; */ /*-- commented out to preserve --*/
+  display: block;                        /*-- syntax for future use --*/
   padding:15px 0 15px 0;
 }
 
@@ -305,9 +305,33 @@ blockquote p {
   max-width: 560px;
   width: 100%;
 }
+/*-------------------- End Main Content Styling -----------------------*/
+/*-------------------- Begin Footer Styling ---------------------------*/
 
-.boombox a, .boombox h4 {
-  font: normal 2rem/1 'docstreet', 'beatstreet', sans-serif;
+footer {
+  background-color: black;
+  border-top: 5px solid #6b110c;
+  padding: 25px 5%;
 }
 
-/*-------------------- End Main Content Styling -----------------------*/
+.copyright, .copyright a {
+  color: white;
+  font: normal 0.8rem/1.5 'quattro', sans-serif;
+}
+
+.copyright {
+  align-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.copyright p {
+  text-align: center;
+}
+
+.copyright a {
+  flex-grow: 1;
+}
+/*-------------------- End Footer Styling -----------------------------*/
