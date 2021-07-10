@@ -95,7 +95,7 @@ blockquote p {
 }
 
 .sidebar img {
-  max-width: 75px;
+  max-width: 200px;
   width: 100%;
 }
 
@@ -335,3 +335,27 @@ footer {
   flex-grow: 1;
 }
 /*-------------------- End Footer Styling -----------------------------*/
+/*--****************** Begin 815 Min-Width Media Query **************--*/
+
+@media (min-width: 815px) {
+
+  .art-aside {
+    display: flex;
+  }
+
+  .art-aside section {
+    order: 2;
+  }
+
+  .sidebar {
+    display: block;
+    order: 1;
+    width: 300px;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+  }
+}
+
+/*--****************** End 815 Min-Width Media Query ****************--*/
