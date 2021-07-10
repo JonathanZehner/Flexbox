@@ -46,15 +46,35 @@ body {
   font: normal 1rem/1.5 'quattro', arial, serif;
   margin: auto;
   padding-top: 5px;
+  text-align: center;
+
 }
 
 h1 {
   font: normal 3rem/1.5 'docstreet', 'beatstreet', sans-serif;
-  text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
   font: bold 2rem/1.5 'beatstreet', arial, sans-serif;
+}
+
+p {
+  text-align: left;
+}
+
+blockquote {
+  border-top: 3px solid #00000045;
+  margin-top: 7px;
+  padding-bottom: 10px;
+
+}
+
+blockquote p {
+  text-align: center;
+}
+
+.hero, .overview, blockquote, .albums {
+  border-bottom: 3px solid black;
 }
 
 /*-- Images --*/
@@ -196,7 +216,7 @@ a:hover {
 }
 
 .overview, article {
-  padding: 10px 0 20px 0;
+  padding: 15px 0 10px 0;
 }
 
 .site-content article h2 {
@@ -215,5 +235,55 @@ blockquote p {
 
 .sidebar {
   display: none;
+}
+
+.albums {
+  background: #6b110c url(../images/brickwall.png) repeat fixed center;
+  margin: 10px auto;
+  padding-bottom: 15px;
+}
+/*-- Flip Card Albums Styling --*/
+/* entire container, keeps perspective */
+.flip-container {
+  margin: auto;
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 250px;
+	height: 250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }
 /*-------------------- End Main Content Styling -----------------------*/
