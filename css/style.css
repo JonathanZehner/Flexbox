@@ -49,6 +49,7 @@ body {
 }
 
 h1 {
+  background-color: #ffffff78;
   font: normal 3rem/1.5 'docstreet', 'beatstreet', sans-serif;
 }
 
@@ -344,40 +345,33 @@ footer {
   }
 
   .overview {
-    padding: 0 2%;
+    padding: 0 2% 10px;
   }
 
   .sidebar {
     background: #6b110c url(../images/brickwall.png) repeat fixed center;
     display: block;
     height: 90%;
-    margin: 15px auto;
+    margin: 15px auto 0;
     order: 1;
     padding: 15px;
     width: 30%;
   }
 
   .three-beasties {
-    padding: 25px 0 15px;
+    padding-bottom: 15px;
   }
 
   .three-beasties ul {
+    background-color: #ffffff78;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style-type: none;
   }
 
-  .yauch {
-    padding-top: 100px;
-  }
-
-  .mike {
-    padding-top: 170px;
-  }
-
-  .mca, .mike-d {
-    padding-top: 50px;
+  .three-beasties li {
+    padding-top: 15px;
   }
 
   .three-beasties iframe {
@@ -387,6 +381,18 @@ footer {
   .three-beasties h4 {
     font: normal 2rem/1 'docstreet', 'beatstreet';
     text-shadow: 1px 1px 3px white;
+  }
+
+  .yauch {
+    margin-top: 100px;
+  }
+
+  .mike {
+    margin-top: 170px;
+  }
+
+  .mca, .mike-d {
+    padding: 50px 0 0;
   }
 
   .art-aside {
@@ -404,8 +410,35 @@ footer {
   }
 
   .albums {
-    margin: 0 auto;
+    margin: 0 auto 25px;
+    padding: 10px 0;
   }
+
+  .albums h2 {
+    background-color: #ffffff78;
+    font: normal 3.5rem/1.5 'docstreet';
+    margin: 25px 0;
+    text-shadow: 1px 1px 10px white;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .flip-container {
+    background-color: black;
+    border: 5px solid #6b110c;
+    padding: 10px 0;
+  }
+
+  .flip-container:nth-child(4),
+  .flip-container:nth-child(5),
+  .flip-container:nth-child(6) {
+    margin-top: 10px;
+  }
+
 
 }
 
