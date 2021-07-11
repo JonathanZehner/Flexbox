@@ -95,7 +95,7 @@ blockquote p {
 }
 
 .sidebar img {
-  max-width: 200px;
+  max-width: 100px;
   width: 100%;
 }
 
@@ -339,23 +339,74 @@ footer {
 
 @media (min-width: 815px) {
 
+  .site-content {
+    padding: 2% 0;
+  }
+
+  .overview {
+    padding: 0 2%;
+  }
+
+  .sidebar {
+    background: #6b110c url(../images/brickwall.png) repeat fixed center;
+    display: block;
+    height: 90%;
+    margin: 15px auto;
+    order: 1;
+    padding: 15px;
+    width: 30%;
+  }
+
+  .three-beasties {
+    padding: 25px 0 15px;
+  }
+
+  .three-beasties ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  .yauch {
+    padding-top: 100px;
+  }
+
+  .mike {
+    padding-top: 170px;
+  }
+
+  .mca, .mike-d {
+    padding-top: 50px;
+  }
+
+  .three-beasties iframe {
+    padding-top: 10%;
+  }
+
+  .three-beasties h4 {
+    font: normal 2rem/1 'docstreet', 'beatstreet';
+    text-shadow: 1px 1px 3px white;
+  }
+
   .art-aside {
     display: flex;
   }
 
   .art-aside section {
     order: 2;
+    padding: 0 3%;
+    width: 70%;
   }
 
-  .sidebar {
-    display: block;
-    order: 1;
-    width: 300px;
+  .art-aside section article p {
+    padding-top: 20px;
   }
 
-  .sidebar ul {
-    list-style-type: none;
+  .albums {
+    margin: 0 auto;
   }
+
 }
 
 /*--****************** End 815 Min-Width Media Query ****************--*/
