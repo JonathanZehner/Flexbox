@@ -61,17 +61,6 @@ p {
   text-align: left;
 }
 
-blockquote {
-  border-top: 3px solid #00000045;
-  margin-top: 7px;
-  padding-bottom: 10px;
-
-}
-
-blockquote p {
-  text-align: center;
-}
-
 .hero1, .overview, blockquote, .albums {
   border-bottom: 3px solid black;
 }
@@ -233,7 +222,7 @@ a:hover {
 
 .site-content {
   margin: auto;
-  padding: 2%;
+  padding: 2% 2% 0;
 }
 
 .overview, article {
@@ -248,10 +237,18 @@ figcaption {
   display: none;
 }
 
+blockquote {
+  border-top: 3px solid #00000045;
+  margin-top: 7px;
+  padding: 10px;
+
+}
+
 blockquote p {
   font: italic 0.8rem/1.5 'beatstreet', 'quattro', sans-serif;
   letter-spacing: 0.05rem;
   padding-top: 10px;
+  text-align: center;
 }
 
 .sidebar {
@@ -261,7 +258,7 @@ blockquote p {
 .albums {
   background: #6b110c url(../images/brickwall.png) repeat fixed center;
   background-size: contain;
-  margin: 10px auto;
+  margin: 10px auto 0;
   padding-bottom: 15px;
 }
 
@@ -314,11 +311,6 @@ blockquote p {
 }
 /*--******** Flip Card Albums Styling (end)********--*/
 
-.video {
-  max-height: 315px;
-  max-width: 560px;
-  width: 100%;
-}
 /*-------------------- End Main Content Styling -----------------------*/
 /*-------------------- Begin Footer Styling ---------------------------*/
 
@@ -326,6 +318,10 @@ footer {
   background-color: black;
   border-top: 5px solid #6b110c;
   padding: 25px 5%;
+}
+
+.boombox {
+  padding-right: 2%;
 }
 
 .copyright, .copyright a {
@@ -349,6 +345,65 @@ footer {
   flex-grow: 1;
 }
 /*-------------------- End Footer Styling -----------------------------*/
+/*--****************** Begin 600 Min-Width Media Query **************--*/
+
+@media (min-width: 600px) {
+
+  .site-content {
+    padding: 2% 0 0;
+  }
+
+  .overview p, .art-aside p {
+    padding: 0 2%;
+  }
+
+  .sidebar {
+    max-width: 330px;
+  }
+
+  .albums {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .albums h2 {
+    background-color: #ffffff78;
+    font: normal 3.5rem/1.5 'docstreet';
+    margin: 25px 0;
+    text-shadow: 1px 1px 10px white;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+  }
+
+  .flip-container {
+    background-color: black;
+    border: 5px solid #6b110c;
+    padding: 10px 0;
+  }
+
+  .flip-container:nth-child(4),
+  .flip-container:nth-child(5),
+  .flip-container:nth-child(6) {
+    margin-top: 10px;
+  }
+
+  .copyright {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .copyright p {
+    padding-left: 5px;
+  }
+}
+
+/*--****************** End 600 Min-Width Media Query ****************--*/
 /*--****************** Begin 815 Min-Width Media Query **************--*/
 
 @media (min-width: 815px) {
@@ -560,38 +615,6 @@ footer {
   .art-aside section article p {
     padding-top: 20px;
   }
-
-  .albums {
-    margin: 0 auto 25px;
-    padding: 10px 0;
-  }
-
-  .albums h2 {
-    background-color: #ffffff78;
-    font: normal 3.5rem/1.5 'docstreet';
-    margin: 25px 0;
-    text-shadow: 1px 1px 10px white;
-  }
-
-  .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .flip-container {
-    background-color: black;
-    border: 5px solid #6b110c;
-    padding: 10px 0;
-  }
-
-  .flip-container:nth-child(4),
-  .flip-container:nth-child(5),
-  .flip-container:nth-child(6) {
-    margin-top: 10px;
-  }
-
-
 }
 
 /*--****************** End 815 Min-Width Media Query ****************--*/
