@@ -45,7 +45,6 @@ body {
   margin: auto;
   padding-top: 5px;
   text-align: center;
-
 }
 
 h1 {
@@ -262,6 +261,19 @@ blockquote p {
   padding-bottom: 15px;
 }
 
+.albums h2 {
+  background-color: #ffffff78;
+  font: normal 1.8rem/1.5 'docstreet';
+  margin: 0 auto;
+  max-width: 1000px;
+  text-shadow: 1px 1px 10px white;
+}
+
+.wrapper {
+  background-color: #ffffff78;
+}
+
+
 /*--******** Flip Card Albums Styling ********--/
     by David Walsh
     https://davidwalsh.name/css-flip
@@ -317,11 +329,14 @@ blockquote p {
 footer {
   background-color: black;
   border-top: 5px solid #6b110c;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   padding: 25px 5%;
 }
 
-.boombox {
-  padding-right: 2%;
+.social-media img {
+  padding: 0 7px;
 }
 
 .copyright, .copyright a {
@@ -344,6 +359,10 @@ footer {
 .copyright a {
   flex-grow: 1;
 }
+
+.validator {
+  align-self: center;
+}
 /*-------------------- End Footer Styling -----------------------------*/
 /*--****************** Begin 600 Min-Width Media Query **************--*/
 
@@ -357,23 +376,17 @@ footer {
     padding: 0 2%;
   }
 
-  .sidebar {
-    max-width: 330px;
-  }
-
   .albums {
     margin: 0 auto;
     padding: 10px 0;
   }
 
   .albums h2 {
-    background-color: #ffffff78;
     font: normal 3.5rem/1.5 'docstreet';
-    margin: 25px 0;
-    text-shadow: 1px 1px 10px white;
   }
 
   .wrapper {
+    background-color: #ffffff78;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -470,8 +483,19 @@ footer {
     order: 1;
   }
 
+  .form input {
+    font-family: 'quattro';
+  }
+
   .input {
+    background-color: #ccc;
+    border-radius: 4px;
+    padding-left: 5px;
     width: 75%;
+  }
+
+  .input-btn {
+    background-color: transparent;
   }
 
   /*-- Dropdown Menu from W3 Schools --*
@@ -560,8 +584,9 @@ footer {
     display: block;
     height: 90%;
     margin: 15px auto 0;
+    max-width: 330px;
     order: 1;
-    padding: 15px;
+    /* padding: 15px; */
     width: 30%;
   }
 
