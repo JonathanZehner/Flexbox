@@ -37,7 +37,7 @@
 	<body class="site">
 		<header id="top">
 			<div class="nav-bar">
-				<img class="logo" src="images/bboy-logo.png" alt="Beastie Boys Logo from Sabotage" title="The Beastie Boys">
+				<img class="logo" src="images/bboy-logo.png" alt="Beastie Boys Logo from Sabotage" title="The Beastie Boys" width="100" height="78.7">
 
 				<!-- Hamburger Menu buttons -->
 				<button class="hamburger">&#9776;</button>
@@ -56,34 +56,45 @@
 
 				<!-- Desktop Nav Menu -->
 				<nav class="desktop-nav">
-					<ul>
-						<div class="dropdown-nav">
-							<button class="drop-btn" type="button" name="button">About</button>
-							<div class="dropdown-content-nav">
-								<a href="#about">Ad Rock</a>
-								<a href="#mca">MCA</a>
-								<a href="#mike-d">Mike D</a>
+					<ul class="main-nav">
+						<li class="dropdown">
+							<button class="dropbtn" type="button" name="button">About</button>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="#about">Ad Rock</a></li>
+									<li><a href="#mca">MCA</a></li>
+									<li><a href="#mike-d">Mike D</a></li>
+								</ul>
 							</div>
-						</div>
-						<li><a href="#albums">Albums</a></li>
-						<li><a href="#vid">Music Video</a></li>
+						</li>
+						<li class="main-li"><a href="#albums">Albums</a></li>
+						<li class="main-li"><a href="#vid">Music Videos</a></li>
 					</ul>
 
-					<ul>
-						<li><a href="https://www.facebook.com/beastieboys" target="_blank">Facebook</a></li>
-						<li><a href="https://www.instagram.com/beastieboysstory/" target="_blank">Instagram</a></li>
-						<li><a href="https://twitter.com/beastieboys" target="_blank">Twitter</a></li>
+					<ul class="social">
+						<li class="fb-logo"><a href="https://www.facebook.com/beastieboys" target="_blank"><img src="images/icons-logos/f-logo.png" alt="Facebook logo that is a blue circle with a white lowercase f inside" title="Check us out on Facebook!" height="35"/></a></li>
+
+						<li class="insta-logo"><a href="https://www.instagram.com/beastieboysstory/" target="_blank"><img src="images/icons-logos/i-glyph.png" alt="Instagram logo that is a multicolored square with a multicolored circle inside to resemble a camera" title="Follow us on Instagram!" height="35"/></a></li>
+
+						<li class="twtr-logo"><a href="https://twitter.com/beastieboys" target="_blank"><img src="images/icons-logos/twitter.png" alt="Twitter logo that is a blue circle with a white bird inside" title="Follow us on Twitter!" height="35"/></a></li>
+
+						<li class="form"><form class="search" action="index.html">
+							<input class="input" type="search" name="search" placeholder="Enter keyword..."/>
+							<input type="submit" value="search" />
+						</form></li>
+
 					</ul>
 
-					<form class="search" action="index.html">
-						<input type="search" name="search" placeholder="Enter keyword..."/>
-						<input type="submit" value="search" />
-					</form>
 				</nav>
 			</div>
 
-			<div class="hero">
+			<div class="hero1">
 				<img src="images/bboy-hero.jpeg" alt="image of the beastie boys jumping behind a boombox taken from the ground's perspective looking up" title="B-Boys">
+				<h1>Beastie Boys</h1>
+			</div>
+
+			<div class="hero2">
+				<img src="images/bboys-story.jpeg" alt="image of the beastie boys jumping behind a boombox taken from the ground's perspective looking up" title="B-Boys">
 				<h1>Beastie Boys</h1>
 			</div>
 		</header>
@@ -294,9 +305,11 @@
 
 		<footer>
       <div class="social-media">
-        <a href="https://www.instagram.com/beastieboysstory/" target="_blank"><i class="fa fa-instagram" style="font-size:40px;color:#fbad50"></i></a>
+				<a href="https://www.facebook.com/beastieboys" target="_blank"><img src="images/icons-logos/f-logo.png" alt="Facebook logo that is a blue circle with a white lowercase f inside" title="Check us out on Facebook!" height="35"/></a>
 
-        <a href="https://www.facebook.com/beastieboys" target="_blank"><i class="fa fa-facebook-square" style="font-size:40px;color:#4267B2"></i></a>
+				<a href="https://www.instagram.com/beastieboysstory/" target="_blank"><img src="images/icons-logos/i-glyph.png" alt="Instagram logo that is a multicolored square with a multicolored circle inside to resemble a camera" title="Follow us on Instagram!" height="35"/></a>
+
+				<a href="https://twitter.com/beastieboys" target="_blank"><img src="images/icons-logos/twitter.png" alt="Twitter logo that is a blue circle with a white bird inside" title="Follow us on Twitter!" height="35"/></a>
       </div>
 
 			<div class="copyright">
